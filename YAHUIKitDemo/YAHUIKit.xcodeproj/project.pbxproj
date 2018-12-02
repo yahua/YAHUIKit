@@ -13,9 +13,12 @@
 		2CB87CF821ADA1D00042D9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB87CF721ADA1D00042D9F6 /* Assets.xcassets */; };
 		2CB87CFB21ADA1D00042D9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB87CF921ADA1D00042D9F6 /* LaunchScreen.storyboard */; };
 		2CB87CFE21ADA1D00042D9F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87CFD21ADA1D00042D9F6 /* main.m */; };
+		C16F20AE193603E3762B0AD7 /* libPods-YAHUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B64025D60BBDF44B0C62458 /* libPods-YAHUIKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00D479687E7566F8478AA8C6 /* Pods-YAHUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAHUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAHUIKit/Pods-YAHUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		2B64025D60BBDF44B0C62458 /* libPods-YAHUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YAHUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB87CEB21ADA1CF0042D9F6 /* YAHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB87CEE21ADA1CF0042D9F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CB87CEF21ADA1CF0042D9F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		2CB87CFA21ADA1D00042D9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB87CFC21ADA1D00042D9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB87CFD21ADA1D00042D9F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78B7DC226FBC06C1C4A67DD7 /* Pods-YAHUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAHUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAHUIKit/Pods-YAHUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C16F20AE193603E3762B0AD7 /* libPods-YAHUIKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2CB87CED21ADA1CF0042D9F6 /* YAHUIKit */,
 				2CB87CEC21ADA1CF0042D9F6 /* Products */,
+				31B638842404EEEF9230DA9B /* Pods */,
+				C4F8FB4D8A1706EA4CA1042B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = YAHUIKit;
 			sourceTree = "<group>";
 		};
+		31B638842404EEEF9230DA9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78B7DC226FBC06C1C4A67DD7 /* Pods-YAHUIKit.debug.xcconfig */,
+				00D479687E7566F8478AA8C6 /* Pods-YAHUIKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4F8FB4D8A1706EA4CA1042B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B64025D60BBDF44B0C62458 /* libPods-YAHUIKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2CB87D0121ADA1D00042D9F6 /* Build configuration list for PBXNativeTarget "YAHUIKit" */;
 			buildPhases = (
+				FE6FE0611572FA238ECE0D3B /* [CP] Check Pods Manifest.lock */,
 				2CB87CE721ADA1CF0042D9F6 /* Sources */,
 				2CB87CE821ADA1CF0042D9F6 /* Frameworks */,
 				2CB87CE921ADA1CF0042D9F6 /* Resources */,
@@ -135,6 +160,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE6FE0611572FA238ECE0D3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YAHUIKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2CB87CE721ADA1CF0042D9F6 /* Sources */ = {
@@ -283,6 +329,7 @@
 		};
 		2CB87D0221ADA1D00042D9F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78B7DC226FBC06C1C4A67DD7 /* Pods-YAHUIKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +346,7 @@
 		};
 		2CB87D0321ADA1D00042D9F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D479687E7566F8478AA8C6 /* Pods-YAHUIKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
