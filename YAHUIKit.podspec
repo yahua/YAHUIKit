@@ -130,6 +130,10 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'YAHUIKit/Category/UITextField/*.h'
       sss.source_files = 'YAHUIKit/Category/UITextField'
     end
+    ss.subspec 'MBProgressHUD' do |sss|
+      sss.public_header_files = 'YAHUIKit/Category/MBProgressHUD/*.h'
+      sss.source_files = 'YAHUIKit/Category/MBProgressHUD'
+    end
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
