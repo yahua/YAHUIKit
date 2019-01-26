@@ -19,14 +19,36 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    if (self.viewControllers.count>=1) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:animated];
+    
 }
-*/
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+    
+    if (self.viewControllers.count == 2) {
+        self.viewControllers.firstObject.hidesBottomBarWhenPushed = NO;
+    }
+    return [super popViewControllerAnimated:animated];
+}
+
+- (nullable NSArray<__kindof UIViewController *> *)popToViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    
+    NSArray *list = [super popToViewController:viewController animated:animated];
+    if (self.viewControllers.count == 1) {
+        self.viewControllers.firstObject.hidesBottomBarWhenPushed = NO;
+    }
+    return list;
+}
+
+- (nullable NSArray<__kindof UIViewController *> *)popToRootViewControllerAnimated:(BOOL)animated {
+    
+    self.viewControllers.firstObject.hidesBottomBarWhenPushed = NO;
+    return [super popToRootViewControllerAnimated:animated];
+}
 
 @end

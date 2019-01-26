@@ -16,6 +16,7 @@
 + (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay;
 
 //只显示文本的HUD框
++ (void)showError:(NSError *)error;
 + (void)showTextOnlyHUD:(NSString *)message;
 + (void)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message;
 + (void)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay;

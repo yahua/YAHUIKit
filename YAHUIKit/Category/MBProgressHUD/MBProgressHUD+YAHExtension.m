@@ -38,6 +38,14 @@
     [hud hideAnimated:YES afterDelay:delay];
 }
 
++ (void)showError:(NSError *)error {
+    
+    if (!error) {
+        return;
+    }
+    [self showTextOnlyHUD:error.localizedDescription];
+}
+
 + (void)showTextOnlyHUD:(NSString *)message {
     [MBProgressHUD showTextOnlyHUDAddedTo:keyWindow message:message];
 }
