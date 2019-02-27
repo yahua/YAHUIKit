@@ -55,6 +55,11 @@
     [self showTextOnlyHUDAddedTo:view message:message hideDelay:2.0f];
 }
 + (void)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay {
+    
+    if (![message isKindOfClass:NSString.class]) {
+        return;
+    }
+    
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode = MBProgressHUDModeText;
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;

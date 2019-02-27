@@ -103,6 +103,10 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'YAHUIKit/CommonUI/XXNibBridge/*.h'
       sss.source_files = 'YAHUIKit/CommonUI/XXNibBridge'
     end
+    ss.subspec 'UIButton' do |sss|
+      sss.public_header_files = 'YAHUIKit/CommonUI/UIButton/*.h'
+      sss.source_files = 'YAHUIKit/CommonUI/UIButton'
+    end
   end
 
   s.subspec 'Category' do |ss|
