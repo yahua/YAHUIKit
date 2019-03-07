@@ -28,6 +28,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message block:(void(^_Nullable)(void))block;
 
+/**
+ 只有一个按钮的alert
+ 
+ @param title 标题
+ @param message 内容
+ @param buttonTile 按钮title
+ */
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block;
 
 /**
  两个按钮的alert  默认左边“取消”   右边“确定”
@@ -59,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param leftBlock 点击左边按钮的回调
  @param rightBlock 点击右边按钮的回调
  */
-- (void)showAlertWithTitle:(NSString *)title
+- (UIAlertController *)showAlertWithTitle:(NSString *)title
                    message:(NSString *)message
                  leftTitle:(NSString *_Nullable)leftTitle
                 rightTitle:(NSString *_Nullable)rightTitle

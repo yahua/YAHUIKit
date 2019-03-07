@@ -21,10 +21,13 @@
 
 - (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message block:(void(^_Nullable)(void))block {
     
-    NSString *rightTitle = @"确定";
+    return [self showAlertWithTitle:title message:message buttonTitle:@"确定" block:block];
+}
+
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-    UIAlertAction *rightAction = [UIAlertAction actionWithTitle:rightTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UIAlertAction *rightAction = [UIAlertAction actionWithTitle:buttonTile style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         if (block) {
             block();
         }
@@ -48,7 +51,7 @@
 }
 
 
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message leftTitle:(NSString *_Nullable)leftTitle rightTitle:(NSString *_Nullable)rightTitle leftBlock:(void(^)(void))leftBlock rightBlock:(void(^)(void))rightBlock {
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message leftTitle:(NSString *_Nullable)leftTitle rightTitle:(NSString *_Nullable)rightTitle leftBlock:(void(^)(void))leftBlock rightBlock:(void(^)(void))rightBlock {
     
     if ([NSString stringIsNullOrEmpty:leftTitle]) {
         leftTitle = @"取消";
@@ -66,6 +69,8 @@
     [alert addAction:cancelAction];
     [alert addAction:rightAction];
     [self presentViewController:alert animated:YES completion:nil];
+    
+    return alert;
 }
 
 @end
