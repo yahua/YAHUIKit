@@ -14,17 +14,17 @@
 
 #pragma mark - 1个按钮
 
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message {
     
     [self showAlertWithTitle:title message:message block:nil];
 }
 
-- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message block:(void(^_Nullable)(void))block {
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message block:(void(^_Nullable)(void))block {
     
     return [self showAlertWithTitle:title message:message buttonTitle:@"确定" block:block];
 }
 
-- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block {
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *rightAction = [UIAlertAction actionWithTitle:buttonTile style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
@@ -40,18 +40,18 @@
 
 #pragma mark - 2个按钮
 
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message rightBlock:(void(^)(void))rightBlock {
+- (void)showAlertWithTitle:(NSString *)title message:(NSString * _Nullable)message rightBlock:(void(^)(void))rightBlock {
     
     [self showAlertWithTitle:title message:message leftTitle:nil rightTitle:nil leftBlock:nil rightBlock:rightBlock];
 }
 
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message rightTitle:(NSString *)rightTitle rightBlock:(void(^_Nullable)(void))rightBlock {
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message rightTitle:(NSString *)rightTitle rightBlock:(void(^_Nullable)(void))rightBlock {
     
     [self showAlertWithTitle:title message:message leftTitle:nil rightTitle:rightTitle leftBlock:nil rightBlock:rightBlock];
 }
 
 
-- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message leftTitle:(NSString *_Nullable)leftTitle rightTitle:(NSString *_Nullable)rightTitle leftBlock:(void(^)(void))leftBlock rightBlock:(void(^)(void))rightBlock {
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message leftTitle:(NSString *_Nullable)leftTitle rightTitle:(NSString *_Nullable)rightTitle leftBlock:(void(^)(void))leftBlock rightBlock:(void(^)(void))rightBlock {
     
     if ([NSString stringIsNullOrEmpty:leftTitle]) {
         leftTitle = @"取消";

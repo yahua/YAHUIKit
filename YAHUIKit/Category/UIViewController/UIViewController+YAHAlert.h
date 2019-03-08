@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param title 标题
  @param message 内容
  */
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message;
 
 /**
  只有一个按钮的alert
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param title 标题
  @param message 内容
  */
-- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message block:(void(^_Nullable)(void))block;
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message block:(void(^_Nullable)(void))block;
 
 /**
  只有一个按钮的alert
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param message 内容
  @param buttonTile 按钮title
  */
-- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block;
+- (UIAlertController *)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message buttonTitle:(NSString *)buttonTile block:(void(^_Nullable)(void))block;
 
 /**
  两个按钮的alert  默认左边“取消”   右边“确定”
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param message 内容
  @param rightBlock 点击确定的回调
  */
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message rightBlock:(void(^_Nullable)(void))rightBlock;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message rightBlock:(void(^_Nullable)(void))rightBlock;
 
 
 /**
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param rightTitle 右边标题
  @param rightBlock 点击右边按钮的回调
  */
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message rightTitle:(NSString *)rightTitle rightBlock:(void(^_Nullable)(void))rightBlock;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *_Nullable)message rightTitle:(NSString *)rightTitle rightBlock:(void(^_Nullable)(void))rightBlock;
 
 /**
  两个按钮的alert
@@ -68,7 +68,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param rightBlock 点击右边按钮的回调
  */
 - (UIAlertController *)showAlertWithTitle:(NSString *)title
-                   message:(NSString *)message
+                   message:(NSString *_Nullable)message
                  leftTitle:(NSString *_Nullable)leftTitle
                 rightTitle:(NSString *_Nullable)rightTitle
                  leftBlock:(void(^_Nullable)(void))leftBlock
