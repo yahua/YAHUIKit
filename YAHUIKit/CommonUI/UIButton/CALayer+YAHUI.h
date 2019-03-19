@@ -4,7 +4,7 @@
 //
 //  Created by MoLice on 16/8/12.
 //  Copyright © 2016年 YAHUI Team. All rights reserved.
-//
+//  
 
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
@@ -29,21 +29,5 @@
  * 移除 CALayer（包括 CAShapeLayer 和 CAGradientLayer）所有支持动画的属性的默认动画，方便需要一个不带动画的 layer 时使用。
  */
 - (void)YAHUI_removeDefaultAnimations;
-
-/**
- * 生成虚线的方法，注意返回的是 CAShapeLayer
- * @param lineLength   每一段的线宽
- * @param lineSpacing  线之间的间隔
- * @param lineWidth    线的宽度
- * @param lineColor    线的颜色
- * @param isHorizontal 是否横向，因为画虚线的缘故，需要指定横向或纵向，横向是 YES，纵向是 NO。
- * 注意：暂不支持 dashPhase 和 dashPattens 数组设置，因为这些都定制性太强，如果用到则自己调用系统方法即可。
- */
-
-+ (CAShapeLayer *)YAHUI_seperatorDashLayerWithLineLength:(NSInteger)lineLength
-                                            lineSpacing:(NSInteger)lineSpacing
-                                              lineWidth:(CGFloat)lineWidth
-                                              lineColor:(CGColorRef)lineColor
-                                           isHorizontal:(BOOL)isHorizontal;
 
 @end

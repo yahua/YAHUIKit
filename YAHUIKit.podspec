@@ -107,6 +107,14 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'YAHUIKit/CommonUI/UIButton/*.h'
       sss.source_files = 'YAHUIKit/CommonUI/UIButton'
     end
+    ss.subspec 'Line' do |sss|
+      sss.public_header_files = 'YAHUIKit/CommonUI/Line/*.h'
+      sss.source_files = 'YAHUIKit/CommonUI/Line'
+    end
+    ss.subspec 'Progress' do |sss|
+      sss.public_header_files = 'YAHUIKit/CommonUI/Progress/*.h'
+      sss.source_files = 'YAHUIKit/CommonUI/Progress'
+    end
   end
 
   s.subspec 'Category' do |ss|

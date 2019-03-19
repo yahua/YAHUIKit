@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-typedef void (^TouchedBlock)(NSInteger tag);
+typedef void (^YAHTouchedBlock)(NSInteger tag);
 
-@interface UIButton (Block)
--(void)addActionHandler:(TouchedBlock)touchHandler;
+@interface UIButton (YAHBlock)
+-(void)addActionHandler:(YAHTouchedBlock)touchHandler;
 @end

@@ -13,9 +13,15 @@
 #import "YAHViewController.h"
 #import "YAHNavigationController.h"
 #import "XXNibBridge.h"
+#import "YAHUIButton.h"
+#import "CALayer+YAHDashLine.h"
+#import "UIView+YAHLine.h"
+#import "YAHCircleProgressView.h"
+#import "YAHCircleGradientProgressView.h"
 
 //Category
-#import "UIButton+Block.h"
+#import "UIButton+YAHBlock.h"
+#import "UIButton+YAHEnlargeTouchArea.h"
 #import "UIDevice+Hardware.h"
 #import "UILabel+SuggestSize.h"
 #import "UILabel+AutoSize.h"
@@ -27,5 +33,6 @@
 #import "UIViewController+YAHAlert.h"
 #import "UIViewController+YAHActionSheet.h"
 #import "MBProgressHUD+YAHExtension.h"
+
 
 #endif /* YAHUIKit_h */

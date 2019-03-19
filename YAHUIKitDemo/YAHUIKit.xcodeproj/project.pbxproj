@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3F4EEF2240CE7500F9D651 /* UILabel+SuggestSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EBA2240CE7500F9D651 /* UILabel+SuggestSize.m */; };
+		2C3F4EF02240CE7500F9D651 /* UILabel+IBFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EBB2240CE7500F9D651 /* UILabel+IBFontSize.m */; };
+		2C3F4EF12240CE7500F9D651 /* UILabel+AutoSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EBC2240CE7500F9D651 /* UILabel+AutoSize.m */; };
+		2C3F4EF22240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EC02240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.m */; };
+		2C3F4EF32240CE7500F9D651 /* UIButton+YAHBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EC12240CE7500F9D651 /* UIButton+YAHBlock.m */; };
+		2C3F4EF42240CE7500F9D651 /* UIDevice+Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EC52240CE7500F9D651 /* UIDevice+Hardware.m */; };
+		2C3F4EF52240CE7500F9D651 /* UIViewController+YAHActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EC82240CE7500F9D651 /* UIViewController+YAHActionSheet.m */; };
+		2C3F4EF62240CE7500F9D651 /* UIViewController+YAHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ECB2240CE7500F9D651 /* UIViewController+YAHAlert.m */; };
+		2C3F4EF72240CE7500F9D651 /* UINavigationController+MethodExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ECE2240CE7500F9D651 /* UINavigationController+MethodExt.m */; };
+		2C3F4EF82240CE7500F9D651 /* UINavigationController+YHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ECF2240CE7500F9D651 /* UINavigationController+YHExtension.m */; };
+		2C3F4EF92240CE7500F9D651 /* MBProgressHUD+YAHExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ED22240CE7500F9D651 /* MBProgressHUD+YAHExtension.m */; };
+		2C3F4EFA2240CE7500F9D651 /* UITextField+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ED72240CE7500F9D651 /* UITextField+Blocks.m */; };
+		2C3F4EFB2240CE7500F9D651 /* UITextField+Select.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4ED82240CE7500F9D651 /* UITextField+Select.m */; };
+		2C3F4EFC2240CE7500F9D651 /* YAHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EDB2240CE7500F9D651 /* YAHViewController.m */; };
+		2C3F4EFD2240CE7500F9D651 /* CALayer+YAHUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EDD2240CE7500F9D651 /* CALayer+YAHUI.m */; };
+		2C3F4EFE2240CE7500F9D651 /* YAHUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EE02240CE7500F9D651 /* YAHUIButton.m */; };
+		2C3F4EFF2240CE7500F9D651 /* XXNibConvention.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EE22240CE7500F9D651 /* XXNibConvention.m */; };
+		2C3F4F002240CE7500F9D651 /* XXNibBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EE32240CE7500F9D651 /* XXNibBridge.m */; };
+		2C3F4F012240CE7500F9D651 /* YAHNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EE82240CE7500F9D651 /* YAHNavigationController.m */; };
+		2C3F4F022240CE7500F9D651 /* UIView+YAHLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EEA2240CE7500F9D651 /* UIView+YAHLine.m */; };
+		2C3F4F032240CE7500F9D651 /* CALayer+YAHDashLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4EED2240CE7500F9D651 /* CALayer+YAHDashLine.m */; };
+		2C3F4F062240D17900F9D651 /* YAHCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4F052240D17800F9D651 /* YAHCircleProgressView.m */; };
+		2C3F4F092240DAB600F9D651 /* YAHCircleGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4F082240DAB600F9D651 /* YAHCircleGradientProgressView.m */; };
 		2CB87CF021ADA1CF0042D9F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87CEF21ADA1CF0042D9F6 /* AppDelegate.m */; };
 		2CB87CF321ADA1CF0042D9F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87CF221ADA1CF0042D9F6 /* ViewController.m */; };
 		2CB87CF621ADA1CF0042D9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB87CF421ADA1CF0042D9F6 /* Main.storyboard */; };
@@ -19,6 +42,53 @@
 /* Begin PBXFileReference section */
 		00D479687E7566F8478AA8C6 /* Pods-YAHUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAHUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-YAHUIKit/Pods-YAHUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		2B64025D60BBDF44B0C62458 /* libPods-YAHUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YAHUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C3F4EB92240CE7500F9D651 /* UILabel+AutoSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+AutoSize.h"; sourceTree = "<group>"; };
+		2C3F4EBA2240CE7500F9D651 /* UILabel+SuggestSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SuggestSize.m"; sourceTree = "<group>"; };
+		2C3F4EBB2240CE7500F9D651 /* UILabel+IBFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+IBFontSize.m"; sourceTree = "<group>"; };
+		2C3F4EBC2240CE7500F9D651 /* UILabel+AutoSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+AutoSize.m"; sourceTree = "<group>"; };
+		2C3F4EBD2240CE7500F9D651 /* UILabel+IBFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+IBFontSize.h"; sourceTree = "<group>"; };
+		2C3F4EBE2240CE7500F9D651 /* UILabel+SuggestSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SuggestSize.h"; sourceTree = "<group>"; };
+		2C3F4EC02240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YAHEnlargeTouchArea.m"; sourceTree = "<group>"; };
+		2C3F4EC12240CE7500F9D651 /* UIButton+YAHBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YAHBlock.m"; sourceTree = "<group>"; };
+		2C3F4EC22240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YAHEnlargeTouchArea.h"; sourceTree = "<group>"; };
+		2C3F4EC32240CE7500F9D651 /* UIButton+YAHBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YAHBlock.h"; sourceTree = "<group>"; };
+		2C3F4EC52240CE7500F9D651 /* UIDevice+Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Hardware.m"; sourceTree = "<group>"; };
+		2C3F4EC62240CE7500F9D651 /* UIDevice+Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Hardware.h"; sourceTree = "<group>"; };
+		2C3F4EC82240CE7500F9D651 /* UIViewController+YAHActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YAHActionSheet.m"; sourceTree = "<group>"; };
+		2C3F4EC92240CE7500F9D651 /* UIViewController+YAHAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YAHAlert.h"; sourceTree = "<group>"; };
+		2C3F4ECA2240CE7500F9D651 /* UIViewController+YAHActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YAHActionSheet.h"; sourceTree = "<group>"; };
+		2C3F4ECB2240CE7500F9D651 /* UIViewController+YAHAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YAHAlert.m"; sourceTree = "<group>"; };
+		2C3F4ECD2240CE7500F9D651 /* UINavigationController+YHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+YHExtension.h"; sourceTree = "<group>"; };
+		2C3F4ECE2240CE7500F9D651 /* UINavigationController+MethodExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MethodExt.m"; sourceTree = "<group>"; };
+		2C3F4ECF2240CE7500F9D651 /* UINavigationController+YHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+YHExtension.m"; sourceTree = "<group>"; };
+		2C3F4ED02240CE7500F9D651 /* UINavigationController+MethodExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MethodExt.h"; sourceTree = "<group>"; };
+		2C3F4ED22240CE7500F9D651 /* MBProgressHUD+YAHExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YAHExtension.m"; sourceTree = "<group>"; };
+		2C3F4ED32240CE7500F9D651 /* MBProgressHUD+YAHExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YAHExtension.h"; sourceTree = "<group>"; };
+		2C3F4ED52240CE7500F9D651 /* UITextField+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Blocks.h"; sourceTree = "<group>"; };
+		2C3F4ED62240CE7500F9D651 /* UITextField+Select.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Select.h"; sourceTree = "<group>"; };
+		2C3F4ED72240CE7500F9D651 /* UITextField+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Blocks.m"; sourceTree = "<group>"; };
+		2C3F4ED82240CE7500F9D651 /* UITextField+Select.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Select.m"; sourceTree = "<group>"; };
+		2C3F4EDA2240CE7500F9D651 /* YAHNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAHNavigationController.h; sourceTree = "<group>"; };
+		2C3F4EDB2240CE7500F9D651 /* YAHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAHViewController.m; sourceTree = "<group>"; };
+		2C3F4EDD2240CE7500F9D651 /* CALayer+YAHUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YAHUI.m"; sourceTree = "<group>"; };
+		2C3F4EDE2240CE7500F9D651 /* YAHUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAHUIButton.h; sourceTree = "<group>"; };
+		2C3F4EDF2240CE7500F9D651 /* CALayer+YAHUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+YAHUI.h"; sourceTree = "<group>"; };
+		2C3F4EE02240CE7500F9D651 /* YAHUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAHUIButton.m; sourceTree = "<group>"; };
+		2C3F4EE22240CE7500F9D651 /* XXNibConvention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibConvention.m; sourceTree = "<group>"; };
+		2C3F4EE32240CE7500F9D651 /* XXNibBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXNibBridge.m; sourceTree = "<group>"; };
+		2C3F4EE42240CE7500F9D651 /* XXNibConvention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibConvention.h; sourceTree = "<group>"; };
+		2C3F4EE52240CE7500F9D651 /* XXNibBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXNibBridge.h; sourceTree = "<group>"; };
+		2C3F4EE72240CE7500F9D651 /* YAHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAHViewController.h; sourceTree = "<group>"; };
+		2C3F4EE82240CE7500F9D651 /* YAHNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YAHNavigationController.m; sourceTree = "<group>"; };
+		2C3F4EEA2240CE7500F9D651 /* UIView+YAHLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YAHLine.m"; sourceTree = "<group>"; };
+		2C3F4EEB2240CE7500F9D651 /* CALayer+YAHDashLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+YAHDashLine.h"; sourceTree = "<group>"; };
+		2C3F4EEC2240CE7500F9D651 /* UIView+YAHLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YAHLine.h"; sourceTree = "<group>"; };
+		2C3F4EED2240CE7500F9D651 /* CALayer+YAHDashLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+YAHDashLine.m"; sourceTree = "<group>"; };
+		2C3F4EEE2240CE7500F9D651 /* YAHUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YAHUIKit.h; sourceTree = "<group>"; };
+		2C3F4F042240D17800F9D651 /* YAHCircleProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAHCircleProgressView.h; sourceTree = "<group>"; };
+		2C3F4F052240D17800F9D651 /* YAHCircleProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAHCircleProgressView.m; sourceTree = "<group>"; };
+		2C3F4F072240DAB600F9D651 /* YAHCircleGradientProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAHCircleGradientProgressView.h; sourceTree = "<group>"; };
+		2C3F4F082240DAB600F9D651 /* YAHCircleGradientProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAHCircleGradientProgressView.m; sourceTree = "<group>"; };
 		2CB87CEB21ADA1CF0042D9F6 /* YAHUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YAHUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB87CEE21ADA1CF0042D9F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CB87CEF21ADA1CF0042D9F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +114,165 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3F4EB62240CE7500F9D651 /* YAHUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EB72240CE7500F9D651 /* Category */,
+				2C3F4ED92240CE7500F9D651 /* CommonUI */,
+				2C3F4EEE2240CE7500F9D651 /* YAHUIKit.h */,
+			);
+			name = YAHUIKit;
+			path = ../../YAHUIKit;
+			sourceTree = "<group>";
+		};
+		2C3F4EB72240CE7500F9D651 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EB82240CE7500F9D651 /* UILable */,
+				2C3F4EBF2240CE7500F9D651 /* UIButton */,
+				2C3F4EC42240CE7500F9D651 /* UIDevice */,
+				2C3F4EC72240CE7500F9D651 /* UIViewController */,
+				2C3F4ECC2240CE7500F9D651 /* UINavigationController */,
+				2C3F4ED12240CE7500F9D651 /* MBProgressHUD */,
+				2C3F4ED42240CE7500F9D651 /* UITextField */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2C3F4EB82240CE7500F9D651 /* UILable */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EB92240CE7500F9D651 /* UILabel+AutoSize.h */,
+				2C3F4EBA2240CE7500F9D651 /* UILabel+SuggestSize.m */,
+				2C3F4EBB2240CE7500F9D651 /* UILabel+IBFontSize.m */,
+				2C3F4EBC2240CE7500F9D651 /* UILabel+AutoSize.m */,
+				2C3F4EBD2240CE7500F9D651 /* UILabel+IBFontSize.h */,
+				2C3F4EBE2240CE7500F9D651 /* UILabel+SuggestSize.h */,
+			);
+			path = UILable;
+			sourceTree = "<group>";
+		};
+		2C3F4EBF2240CE7500F9D651 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EC02240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.m */,
+				2C3F4EC12240CE7500F9D651 /* UIButton+YAHBlock.m */,
+				2C3F4EC22240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.h */,
+				2C3F4EC32240CE7500F9D651 /* UIButton+YAHBlock.h */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		2C3F4EC42240CE7500F9D651 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EC52240CE7500F9D651 /* UIDevice+Hardware.m */,
+				2C3F4EC62240CE7500F9D651 /* UIDevice+Hardware.h */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		2C3F4EC72240CE7500F9D651 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EC82240CE7500F9D651 /* UIViewController+YAHActionSheet.m */,
+				2C3F4EC92240CE7500F9D651 /* UIViewController+YAHAlert.h */,
+				2C3F4ECA2240CE7500F9D651 /* UIViewController+YAHActionSheet.h */,
+				2C3F4ECB2240CE7500F9D651 /* UIViewController+YAHAlert.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		2C3F4ECC2240CE7500F9D651 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4ECD2240CE7500F9D651 /* UINavigationController+YHExtension.h */,
+				2C3F4ECE2240CE7500F9D651 /* UINavigationController+MethodExt.m */,
+				2C3F4ECF2240CE7500F9D651 /* UINavigationController+YHExtension.m */,
+				2C3F4ED02240CE7500F9D651 /* UINavigationController+MethodExt.h */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		2C3F4ED12240CE7500F9D651 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4ED22240CE7500F9D651 /* MBProgressHUD+YAHExtension.m */,
+				2C3F4ED32240CE7500F9D651 /* MBProgressHUD+YAHExtension.h */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		2C3F4ED42240CE7500F9D651 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4ED52240CE7500F9D651 /* UITextField+Blocks.h */,
+				2C3F4ED62240CE7500F9D651 /* UITextField+Select.h */,
+				2C3F4ED72240CE7500F9D651 /* UITextField+Blocks.m */,
+				2C3F4ED82240CE7500F9D651 /* UITextField+Select.m */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		2C3F4ED92240CE7500F9D651 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EDA2240CE7500F9D651 /* YAHNavigationController.h */,
+				2C3F4EDB2240CE7500F9D651 /* YAHViewController.m */,
+				2C3F4EDC2240CE7500F9D651 /* UIButton */,
+				2C3F4EE12240CE7500F9D651 /* XXNibBridge */,
+				2C3F4EE62240CE7500F9D651 /* Progress */,
+				2C3F4EE72240CE7500F9D651 /* YAHViewController.h */,
+				2C3F4EE82240CE7500F9D651 /* YAHNavigationController.m */,
+				2C3F4EE92240CE7500F9D651 /* Line */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		2C3F4EDC2240CE7500F9D651 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EDD2240CE7500F9D651 /* CALayer+YAHUI.m */,
+				2C3F4EDE2240CE7500F9D651 /* YAHUIButton.h */,
+				2C3F4EDF2240CE7500F9D651 /* CALayer+YAHUI.h */,
+				2C3F4EE02240CE7500F9D651 /* YAHUIButton.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		2C3F4EE12240CE7500F9D651 /* XXNibBridge */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EE22240CE7500F9D651 /* XXNibConvention.m */,
+				2C3F4EE32240CE7500F9D651 /* XXNibBridge.m */,
+				2C3F4EE42240CE7500F9D651 /* XXNibConvention.h */,
+				2C3F4EE52240CE7500F9D651 /* XXNibBridge.h */,
+			);
+			path = XXNibBridge;
+			sourceTree = "<group>";
+		};
+		2C3F4EE62240CE7500F9D651 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4F042240D17800F9D651 /* YAHCircleProgressView.h */,
+				2C3F4F052240D17800F9D651 /* YAHCircleProgressView.m */,
+				2C3F4F072240DAB600F9D651 /* YAHCircleGradientProgressView.h */,
+				2C3F4F082240DAB600F9D651 /* YAHCircleGradientProgressView.m */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		2C3F4EE92240CE7500F9D651 /* Line */ = {
+			isa = PBXGroup;
+			children = (
+				2C3F4EEA2240CE7500F9D651 /* UIView+YAHLine.m */,
+				2C3F4EEB2240CE7500F9D651 /* CALayer+YAHDashLine.h */,
+				2C3F4EEC2240CE7500F9D651 /* UIView+YAHLine.h */,
+				2C3F4EED2240CE7500F9D651 /* CALayer+YAHDashLine.m */,
+			);
+			path = Line;
+			sourceTree = "<group>";
+		};
 		2CB87CE221ADA1CF0042D9F6 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +294,7 @@
 		2CB87CED21ADA1CF0042D9F6 /* YAHUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				2C3F4EB62240CE7500F9D651 /* YAHUIKit */,
 				2CB87CEE21ADA1CF0042D9F6 /* AppDelegate.h */,
 				2CB87CEF21ADA1CF0042D9F6 /* AppDelegate.m */,
 				2CB87CF121ADA1CF0042D9F6 /* ViewController.h */,
@@ -187,9 +417,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3F4EF72240CE7500F9D651 /* UINavigationController+MethodExt.m in Sources */,
+				2C3F4EFB2240CE7500F9D651 /* UITextField+Select.m in Sources */,
+				2C3F4F092240DAB600F9D651 /* YAHCircleGradientProgressView.m in Sources */,
+				2C3F4EF42240CE7500F9D651 /* UIDevice+Hardware.m in Sources */,
+				2C3F4EF32240CE7500F9D651 /* UIButton+YAHBlock.m in Sources */,
+				2C3F4EFA2240CE7500F9D651 /* UITextField+Blocks.m in Sources */,
+				2C3F4F062240D17900F9D651 /* YAHCircleProgressView.m in Sources */,
 				2CB87CF321ADA1CF0042D9F6 /* ViewController.m in Sources */,
 				2CB87CFE21ADA1D00042D9F6 /* main.m in Sources */,
+				2C3F4EFC2240CE7500F9D651 /* YAHViewController.m in Sources */,
+				2C3F4EFD2240CE7500F9D651 /* CALayer+YAHUI.m in Sources */,
+				2C3F4F002240CE7500F9D651 /* XXNibBridge.m in Sources */,
+				2C3F4EEF2240CE7500F9D651 /* UILabel+SuggestSize.m in Sources */,
+				2C3F4EF82240CE7500F9D651 /* UINavigationController+YHExtension.m in Sources */,
+				2C3F4F012240CE7500F9D651 /* YAHNavigationController.m in Sources */,
 				2CB87CF021ADA1CF0042D9F6 /* AppDelegate.m in Sources */,
+				2C3F4F022240CE7500F9D651 /* UIView+YAHLine.m in Sources */,
+				2C3F4EFF2240CE7500F9D651 /* XXNibConvention.m in Sources */,
+				2C3F4EF22240CE7500F9D651 /* UIButton+YAHEnlargeTouchArea.m in Sources */,
+				2C3F4EF62240CE7500F9D651 /* UIViewController+YAHAlert.m in Sources */,
+				2C3F4EF12240CE7500F9D651 /* UILabel+AutoSize.m in Sources */,
+				2C3F4EFE2240CE7500F9D651 /* YAHUIButton.m in Sources */,
+				2C3F4EF02240CE7500F9D651 /* UILabel+IBFontSize.m in Sources */,
+				2C3F4EF92240CE7500F9D651 /* MBProgressHUD+YAHExtension.m in Sources */,
+				2C3F4F032240CE7500F9D651 /* CALayer+YAHDashLine.m in Sources */,
+				2C3F4EF52240CE7500F9D651 /* UIViewController+YAHActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
