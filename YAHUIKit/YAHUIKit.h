@@ -12,6 +12,9 @@
 //CommonUI
 #import "YAHViewController.h"
 #import "YAHNavigationController.h"
+#import "YAHTableViewController.h"
+#import "YAHTableViewCell.h"
+#import "YAHView.h"
 #import "XXNibBridge.h"
 #import "YAHUIButton.h"
 #import "CALayer+YAHDashLine.h"

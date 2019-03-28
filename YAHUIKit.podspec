@@ -97,8 +97,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = "Classes/**/*.h"
 
   s.subspec 'CommonUI' do |ss|
-    ss.public_header_files = 'YAHUIKit/CommonUI/*.h'
-    ss.source_files = 'YAHUIKit/CommonUI'
     ss.subspec 'Base' do |sss|
       sss.public_header_files = 'YAHUIKit/CommonUI/Base/*.h'
       sss.source_files = 'YAHUIKit/CommonUI/Base'
