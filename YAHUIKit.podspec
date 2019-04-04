@@ -94,6 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "YAHUIKit", "YAHUIKit/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
   s.dependency "YAHBaseKit"
+  s.dependency "MBProgressHUD"
   # s.public_header_files = "Classes/**/*.h"
 
   s.subspec 'CommonUI' do |ss|
