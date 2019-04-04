@@ -149,6 +149,10 @@ Pod::Spec.new do |s|
       sss.public_header_files = 'YAHUIKit/Category/MBProgressHUD/*.h'
       sss.source_files = 'YAHUIKit/Category/MBProgressHUD'
     end
+    ss.subspec 'UIView' do |sss|
+      sss.public_header_files = 'YAHUIKit/Category/UIView/*.h'
+      sss.source_files = 'YAHUIKit/Category/UIView'
+    end
   end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

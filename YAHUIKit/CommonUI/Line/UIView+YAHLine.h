@@ -43,4 +43,6 @@ typedef NS_OPTIONS(NSUInteger, LinePosition) {
 //添加分割线(指定位置、左右/上下边距、颜色)  position不变
 - (UIView *)addLineForViewWithPosition:(LinePosition)position margin:(CGFloat)margin color:(UIColor *)color;
 
+- (UIView *)lineView;
+
 @end

@@ -10,6 +10,7 @@
 
 static CGFloat kLineWidth = 1.0f;
 static UIColor *kLineColor = nil;
+static NSInteger kLineTag = 8787;
 
 @implementation UIView (YAHLine)
 
@@ -98,6 +99,7 @@ static UIColor *kLineColor = nil;
         }
     }
     line.backgroundColor = color;
+    line.tag = kLineTag;
     [self addSubview:line];
     
     return line;
@@ -131,8 +133,15 @@ static UIColor *kLineColor = nil;
         }
     }
     line.backgroundColor = color;
+    line.tag = kLineTag;
     [self addSubview:line];
     
+    return line;
+}
+
+- (UIView *)lineView {
+    
+    UIView *line = [self viewWithTag:kLineTag];
     return line;
 }
 

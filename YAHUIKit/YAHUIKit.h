@@ -36,6 +36,7 @@
 #import "UIViewController+YAHAlert.h"
 #import "UIViewController+YAHActionSheet.h"
 #import "MBProgressHUD+YAHExtension.h"
+#import "UIView+YAHExtend.h"
 
 
 #endif /* YAHUIKit_h */
