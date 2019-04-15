@@ -8,7 +8,7 @@
 
 #import "MBProgressHUD+YAHExtension.h"
 
-#define keyWindow [UIApplication sharedApplication].keyWindow
+#define keyWindow ([[UIApplication sharedApplication] delegate].window)
 
 @implementation MBProgressHUD (YAHExtension)
 
