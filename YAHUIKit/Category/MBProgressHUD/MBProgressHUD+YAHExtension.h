@@ -12,7 +12,9 @@
 
 //显示带转圈文字的HUD框
 + (void)showWaitView:(NSString *)message;
++ (void)showDisableWaitView:(NSString *)message;
 + (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message;
++ (void)showDisableWaitViewAddedTo:(UIView *)view message:(NSString *)message;
 + (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay;
 
 //只显示文本的HUD框

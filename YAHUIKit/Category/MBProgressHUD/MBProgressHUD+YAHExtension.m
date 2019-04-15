@@ -18,8 +18,24 @@
     [MBProgressHUD showWaitViewAddedTo:keyWindow message:message];
 }
 
++ (void)showDisableWaitView:(NSString *)message {
+    
+    [MBProgressHUD showDisableWaitViewAddedTo:keyWindow message:message];
+}
+
 + (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.label.text = message;
+    hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color = [UIColor colorWithWhite:0 alpha:0.7f];
+    hud.contentColor = [UIColor colorWithWhite:1 alpha:1];
+    [hud setDefaultMotionEffectsEnabled:YES];
+    [hud showAnimated:YES];
+}
+
++ (void)showDisableWaitViewAddedTo:(UIView *)view message:(NSString *)message {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    hud.userInteractionEnabled = NO;
     hud.label.text = message;
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
     hud.bezelView.color = [UIColor colorWithWhite:0 alpha:0.7f];

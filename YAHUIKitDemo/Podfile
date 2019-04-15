@@ -6,6 +6,6 @@ target 'YAHUIKit' do
   # use_frameworks!
 
   # Pods for YAHUIKit
-  pod 'YAHBaseKit', :path => '/Users/wangsw/yahua_kit/YAHBaseKit'
+  #pod 'YAHBaseKit', :path => '/Users/wangsw/yahua_kit/YAHBaseKit'
   pod 'MBProgressHUD'
 end
