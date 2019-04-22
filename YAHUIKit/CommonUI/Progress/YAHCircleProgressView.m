@@ -90,13 +90,15 @@
     UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:radius startAngle:startA endAngle:endA clockwise:YES];
     _progressLayer.path = path.CGPath;
     
-    [_progressLayer removeAnimationForKey:@"animation1"];
-    CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
-    pathAnimation.duration = self.duration;
-    pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-    pathAnimation.toValue = [NSNumber numberWithFloat:1.0];
-    [_progressLayer addAnimation:pathAnimation forKey:@"animation1"];
+    if (_duration > 0) {
+        [_progressLayer removeAnimationForKey:@"animation1"];
+        CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
+        pathAnimation.duration = self.duration;
+        pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+        pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
+        pathAnimation.toValue = [NSNumber numberWithFloat:1.0];
+        [_progressLayer addAnimation:pathAnimation forKey:@"animation1"];
+    }
 }
 
 @end
