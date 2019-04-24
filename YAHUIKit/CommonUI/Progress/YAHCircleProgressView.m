@@ -31,6 +31,7 @@
     
     self = [super initWithFrame:frame];
     if (self) {
+        self.userInteractionEnabled = NO;
         _startAngle = startAngle;
         _endAngle = endAngle;
         _bgColor = bgColor;
@@ -95,8 +96,9 @@
         CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
         pathAnimation.duration = self.duration;
         pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-        pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
-        pathAnimation.toValue = [NSNumber numberWithFloat:1.0];
+        pathAnimation.fromValue = [NSNumber numberWithFloat:_reduce?1.0f:0.0f];
+        pathAnimation.toValue = [NSNumber numberWithFloat:_reduce?0.0:1.0f];
+        pathAnimation.removedOnCompletion = YES;
         [_progressLayer addAnimation:pathAnimation forKey:@"animation1"];
     }
 }

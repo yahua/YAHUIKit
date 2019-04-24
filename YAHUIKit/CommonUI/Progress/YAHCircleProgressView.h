@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
                 progressColor:(UIColor *)progressColor
                     lineWidth:(CGFloat)lineWidth;
 
+@property (nonatomic, assign) BOOL reduce; //递减动画
 @property (nonatomic, assign) CGFloat duration;  //动画时间  default 1
 @property (nonatomic, assign) CGFloat progress;  //0-1
 
