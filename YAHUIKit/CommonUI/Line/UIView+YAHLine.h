@@ -1,8 +1,8 @@
 //
 //  UIView+Addition.h
-//  MoboNews
+//  YAHUIKit
 //
-//  Created by Eirc on 14-10-22.
+//  Created by yahua on 14-10-22.
 //  Copyright (c) 2014年 __MyCompanyName__. All rights reserved.
 //
 
