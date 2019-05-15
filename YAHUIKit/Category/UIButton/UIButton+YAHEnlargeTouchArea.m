@@ -1,8 +1,8 @@
 //
 //  UIButton+EnlargeTouchArea.m
-//  MoboNews
+//  YAHUIKit
 //
-//  Created by Ye Gaofei on 2017/11/2.
+//  Created by yahua on 2017/11/2.
 //  Copyright © 2017年 All rights reserved.
 //
 
