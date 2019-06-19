@@ -83,14 +83,8 @@
     hud.bezelView.color = [UIColor colorWithWhite:0 alpha:0.7f];
     
     UIColor *textColor = [UIColor whiteColor];
-    
-    if (message.length > 15) {
-        hud.detailsLabel.text = message;
-        hud.detailsLabel.textColor = textColor;
-    } else {
-        hud.label.text = message;
-        hud.label.textColor = textColor;
-    }
+    hud.detailsLabel.text = message;
+    hud.detailsLabel.textColor = textColor;
     hud.margin = 10.f;
     hud.removeFromSuperViewOnHide = YES;
     [hud hideAnimated:YES afterDelay:delay];
@@ -98,7 +92,11 @@
 
 //隐藏HUD框
 + (void)hideHUBFrom:(UIView *)view {
-    [MBProgressHUD hideHUDForView:view animated:YES];
+    MBProgressHUD *hud = [self HUDForView:view];
+    while (hud) {
+        [MBProgressHUD hideHUDForView:view animated:YES];
+        hud = [self HUDForView:view];
+    }
 }
 
 + (void)hideHUD {
