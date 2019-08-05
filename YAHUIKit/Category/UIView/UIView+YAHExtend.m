@@ -22,4 +22,10 @@
     return nil;
 }
 
++ (__kindof UIView *)viewWithXib {
+    
+    NSString *xibName = NSStringFromClass([self class]);
+    return [[NSBundle mainBundle] loadNibNamed:xibName owner:nil options:nil].firstObject;
+}
+
 @end

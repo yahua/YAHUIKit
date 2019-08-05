@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIViewController *)getParentVC;
 
++ (__kindof UIView *)viewWithXib;
+
 @end
 
 NS_ASSUME_NONNULL_END

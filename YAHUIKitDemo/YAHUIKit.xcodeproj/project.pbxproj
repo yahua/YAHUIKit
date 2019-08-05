@@ -31,6 +31,7 @@
 		2C3F4F062240D17900F9D651 /* YAHCircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4F052240D17800F9D651 /* YAHCircleProgressView.m */; };
 		2C3F4F092240DAB600F9D651 /* YAHCircleGradientProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3F4F082240DAB600F9D651 /* YAHCircleGradientProgressView.m */; };
 		2C90C1A522F4115B00C3D109 /* YAHScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90C1A422F4115B00C3D109 /* YAHScrollView.m */; };
+		2C90C39222F8292F00C3D109 /* UIView+YAHExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C90C39022F8292F00C3D109 /* UIView+YAHExtend.m */; };
 		2CA9B73A224CD1470024EF44 /* YAHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9B739224CD1470024EF44 /* YAHTableViewController.m */; };
 		2CA9B73D224CD23F0024EF44 /* YAHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9B73C224CD23F0024EF44 /* YAHTableViewCell.m */; };
 		2CA9B740224CD4100024EF44 /* YAHView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9B73F224CD4100024EF44 /* YAHView.m */; };
@@ -95,6 +96,8 @@
 		2C3F4F082240DAB600F9D651 /* YAHCircleGradientProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAHCircleGradientProgressView.m; sourceTree = "<group>"; };
 		2C90C1A322F4115B00C3D109 /* YAHScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAHScrollView.h; sourceTree = "<group>"; };
 		2C90C1A422F4115B00C3D109 /* YAHScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAHScrollView.m; sourceTree = "<group>"; };
+		2C90C39022F8292F00C3D109 /* UIView+YAHExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YAHExtend.m"; sourceTree = "<group>"; };
+		2C90C39122F8292F00C3D109 /* UIView+YAHExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YAHExtend.h"; sourceTree = "<group>"; };
 		2CA9B738224CD1470024EF44 /* YAHTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAHTableViewController.h; sourceTree = "<group>"; };
 		2CA9B739224CD1470024EF44 /* YAHTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAHTableViewController.m; sourceTree = "<group>"; };
 		2CA9B73B224CD23F0024EF44 /* YAHTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAHTableViewCell.h; sourceTree = "<group>"; };
@@ -140,6 +143,7 @@
 		2C3F4EB72240CE7500F9D651 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				2C90C38F22F8292E00C3D109 /* UIView */,
 				2C3F4EB82240CE7500F9D651 /* UILable */,
 				2C3F4EBF2240CE7500F9D651 /* UIButton */,
 				2C3F4EC42240CE7500F9D651 /* UIDevice */,
@@ -290,6 +294,15 @@
 				2C90C1A422F4115B00C3D109 /* YAHScrollView.m */,
 			);
 			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		2C90C38F22F8292E00C3D109 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2C90C39022F8292F00C3D109 /* UIView+YAHExtend.m */,
+				2C90C39122F8292F00C3D109 /* UIView+YAHExtend.h */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		2CA9B737224CAC310024EF44 /* Base */ = {
@@ -457,6 +470,7 @@
 				2C3F4EF72240CE7500F9D651 /* UINavigationController+MethodExt.m in Sources */,
 				2C3F4EFB2240CE7500F9D651 /* UITextField+Select.m in Sources */,
 				2C3F4F092240DAB600F9D651 /* YAHCircleGradientProgressView.m in Sources */,
+				2C90C39222F8292F00C3D109 /* UIView+YAHExtend.m in Sources */,
 				2C3F4EF42240CE7500F9D651 /* UIDevice+Hardware.m in Sources */,
 				2C3F4EF32240CE7500F9D651 /* UIButton+YAHBlock.m in Sources */,
 				2C3F4EFA2240CE7500F9D651 /* UITextField+Blocks.m in Sources */,
