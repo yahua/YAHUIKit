@@ -14,16 +14,16 @@
 
 //显示带转圈文字的HUD框
 
-+ (void)showWaitView:(NSString *)message {
-    [MBProgressHUD showWaitViewAddedTo:keyWindow message:message];
++ (MBProgressHUD *)showWaitView:(NSString *)message {
+    return [MBProgressHUD showWaitViewAddedTo:keyWindow message:message];
 }
 
-+ (void)showDisableWaitView:(NSString *)message {
++ (MBProgressHUD *)showDisableWaitView:(NSString *)message {
     
-    [MBProgressHUD showDisableWaitViewAddedTo:keyWindow message:message];
+    return [MBProgressHUD showDisableWaitViewAddedTo:keyWindow message:message];
 }
 
-+ (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message {
++ (MBProgressHUD *)showWaitViewAddedTo:(UIView *)view message:(NSString *)message {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = message;
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
@@ -31,9 +31,10 @@
     hud.contentColor = [UIColor colorWithWhite:1 alpha:1];
     [hud setDefaultMotionEffectsEnabled:YES];
     [hud showAnimated:YES];
+    return hud;
 }
 
-+ (void)showDisableWaitViewAddedTo:(UIView *)view message:(NSString *)message {
++ (MBProgressHUD *)showDisableWaitViewAddedTo:(UIView *)view message:(NSString *)message {
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.userInteractionEnabled = NO;
     hud.label.text = message;
@@ -42,9 +43,9 @@
     hud.contentColor = [UIColor colorWithWhite:1 alpha:1];
     [hud setDefaultMotionEffectsEnabled:YES];
     [hud showAnimated:YES];
-    
+    return hud;
 }
-+ (void)showWaitViewAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay {
++ (MBProgressHUD *)showWaitViewAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay {
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text = message;
@@ -52,28 +53,29 @@
     hud.bezelView.color = [UIColor colorWithWhite:0 alpha:0.7f];
     [hud showAnimated:YES];
     [hud hideAnimated:YES afterDelay:delay];
+    return hud;
 }
 
-+ (void)showError:(NSError *)error {
++ (MBProgressHUD *)showError:(NSError *)error {
     
     if (!error) {
-        return;
+        return nil;
     }
-    [self showTextOnlyHUD:error.localizedDescription];
+    return [self showTextOnlyHUD:error.localizedDescription];
 }
 
-+ (void)showTextOnlyHUD:(NSString *)message {
-    [MBProgressHUD showTextOnlyHUDAddedTo:keyWindow message:message];
++ (MBProgressHUD *)showTextOnlyHUD:(NSString *)message {
+    return [MBProgressHUD showTextOnlyHUDAddedTo:keyWindow message:message];
 }
 
 //只显示文本的HUD框
-+ (void)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message {
-    [self showTextOnlyHUDAddedTo:view message:message hideDelay:2.0f];
++ (MBProgressHUD *)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message {
+    return [self showTextOnlyHUDAddedTo:view message:message hideDelay:2.0f];
 }
-+ (void)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay {
++ (MBProgressHUD *)showTextOnlyHUDAddedTo:(UIView *)view message:(NSString *)message hideDelay:(NSInteger)delay {
     
     if (![message isKindOfClass:NSString.class]) {
-        return;
+        return nil;
     }
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -88,6 +90,7 @@
     hud.margin = 10.f;
     hud.removeFromSuperViewOnHide = YES;
     [hud hideAnimated:YES afterDelay:delay];
+    return hud;
 }
 
 //隐藏HUD框
