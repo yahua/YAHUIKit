@@ -41,6 +41,7 @@
 		2CB87CF821ADA1D00042D9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB87CF721ADA1D00042D9F6 /* Assets.xcassets */; };
 		2CB87CFB21ADA1D00042D9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CB87CF921ADA1D00042D9F6 /* LaunchScreen.storyboard */; };
 		2CB87CFE21ADA1D00042D9F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB87CFD21ADA1D00042D9F6 /* main.m */; };
+		2CC3A71723B08CCA00520EE6 /* UIViewController+YAHCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC3A71623B08CCA00520EE6 /* UIViewController+YAHCommon.m */; };
 		C16F20AE193603E3762B0AD7 /* libPods-YAHUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B64025D60BBDF44B0C62458 /* libPods-YAHUIKit.a */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,8 @@
 		2CB87CFA21ADA1D00042D9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CB87CFC21ADA1D00042D9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB87CFD21ADA1D00042D9F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CC3A71523B08CC900520EE6 /* UIViewController+YAHCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YAHCommon.h"; sourceTree = "<group>"; };
+		2CC3A71623B08CCA00520EE6 /* UIViewController+YAHCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YAHCommon.m"; sourceTree = "<group>"; };
 		78B7DC226FBC06C1C4A67DD7 /* Pods-YAHUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YAHUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YAHUIKit/Pods-YAHUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,9 +194,11 @@
 		2C3F4EC72240CE7500F9D651 /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2CC3A71523B08CC900520EE6 /* UIViewController+YAHCommon.h */,
+				2CC3A71623B08CCA00520EE6 /* UIViewController+YAHCommon.m */,
+				2C3F4ECA2240CE7500F9D651 /* UIViewController+YAHActionSheet.h */,
 				2C3F4EC82240CE7500F9D651 /* UIViewController+YAHActionSheet.m */,
 				2C3F4EC92240CE7500F9D651 /* UIViewController+YAHAlert.h */,
-				2C3F4ECA2240CE7500F9D651 /* UIViewController+YAHActionSheet.h */,
 				2C3F4ECB2240CE7500F9D651 /* UIViewController+YAHAlert.m */,
 			);
 			path = UIViewController;
@@ -476,6 +481,7 @@
 				2C3F4EFA2240CE7500F9D651 /* UITextField+Blocks.m in Sources */,
 				2CA9B73D224CD23F0024EF44 /* YAHTableViewCell.m in Sources */,
 				2C3F4F062240D17900F9D651 /* YAHCircleProgressView.m in Sources */,
+				2CC3A71723B08CCA00520EE6 /* UIViewController+YAHCommon.m in Sources */,
 				2CB87CF321ADA1CF0042D9F6 /* ViewController.m in Sources */,
 				2CB87CFE21ADA1D00042D9F6 /* main.m in Sources */,
 				2C3F4EFC2240CE7500F9D651 /* YAHViewController.m in Sources */,
