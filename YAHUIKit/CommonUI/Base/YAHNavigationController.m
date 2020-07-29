@@ -28,6 +28,14 @@
     
 }
 
+- (void)setViewControllers:(NSArray<UIViewController *> *)viewControllers animated:(BOOL)animated {
+    
+    if (viewControllers.count>=1) {
+        viewControllers.lastObject.hidesBottomBarWhenPushed = YES;
+    }
+    [super setViewControllers:viewControllers animated:YES];
+}
+
 - (UIViewController *)popViewControllerAnimated:(BOOL)animated {
     
     if (self.viewControllers.count == 2) {
