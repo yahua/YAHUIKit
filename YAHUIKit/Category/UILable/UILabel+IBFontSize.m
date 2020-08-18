@@ -27,7 +27,7 @@
     if (self) {
         if (self.titleLabel.tag != JumpTag) {
             CGFloat fontSize = self.titleLabel.font.pointSize;
-            self.titleLabel.font = [UIFont fontWithName:self.titleLabel.font.fontName size:fontSize * SizeScale];
+            self.titleLabel.font = [self.titleLabel.font fontWithSize:fontSize * SizeScale];
         }
     }
     return self;
@@ -49,7 +49,8 @@
     if (self) {
         if (self.tag != JumpTag) {
             CGFloat fontSize = self.font.pointSize;
-            self.font = [UIFont fontWithName:self.font.fontName size:fontSize * SizeScale];
+            self.font = [self.font fontWithSize:fontSize * SizeScale];
+//            self.font = [UIFont fontWithName:self.font.fontName size:fontSize * SizeScale];
         }
     }
     return self;
@@ -71,7 +72,7 @@
     if (self) {
         if (self.tag != JumpTag) {
             CGFloat fontSize = self.font.pointSize;
-            self.font = [UIFont fontWithName:self.font.fontName size:fontSize * SizeScale];
+            self.font = [self.font fontWithSize:fontSize * SizeScale];
         }
     }
     return self;
