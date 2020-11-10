@@ -25,6 +25,7 @@
 
 //隐藏HUD框
 + (void)hideHUD;
++ (void)hideHUDWithAnimation:(BOOL)animation;
 + (void)hideHUBFrom:(UIView *)view;
 
 @end

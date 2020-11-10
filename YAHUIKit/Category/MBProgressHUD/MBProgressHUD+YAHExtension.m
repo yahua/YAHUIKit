@@ -106,4 +106,9 @@
     [MBProgressHUD hideHUBFrom:keyWindow];
 }
 
++ (void)hideHUDWithAnimation:(BOOL)animation {
+    
+    [MBProgressHUD hideHUDForView:keyWindow animated:animation];
+}
+
 @end
