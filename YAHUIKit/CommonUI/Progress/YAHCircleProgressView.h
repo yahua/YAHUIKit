@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL reduce; //递减动画
 @property (nonatomic, assign) CGFloat duration;  //动画时间  default 1
 @property (nonatomic, assign) CGFloat progress;  //0-1
+@property (nonatomic, assign) CAShapeLayerLineCap lineCap; //default:kCALineCapRound
 
 @end
 

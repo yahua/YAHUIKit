@@ -103,4 +103,9 @@
     }
 }
 
+- (void)setLineCap:(CAShapeLayerLineCap)lineCap {
+    
+    self.progressLayer.lineCap = lineCap;
+}
+
 @end
