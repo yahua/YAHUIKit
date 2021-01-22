@@ -24,6 +24,9 @@
     if (self.viewControllers.count>=1) {
         viewController.hidesBottomBarWhenPushed = YES;
     }
+    if (viewController == self.topViewController) { //防止重复添加
+        return;
+    }
     [super pushViewController:viewController animated:animated];
     
 }
