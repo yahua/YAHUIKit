@@ -11,4 +11,10 @@ typedef void (^YAHTouchedBlock)(NSInteger tag);
 
 @interface UIButton (YAHBlock)
 -(void)addActionHandler:(YAHTouchedBlock)touchHandler;
+
+
+/// 点击回调-点击按钮后，延迟响应0.5s，防止重复点击
+/// @param touchHandler 点击回调
+-(void)addActionAndDisableAWhileHandler:(YAHTouchedBlock)touchHandler;
+
 @end
